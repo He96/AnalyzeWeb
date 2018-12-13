@@ -135,7 +135,7 @@ bar3d.add("", x_axis, y_axis, [[d[1], d[0], d[2]] for d in data],
 style = Style(
     width=1620, height=720
 )
-chart = WordCloud('图书评论最多', **style.init_style)
+chart = WordCloud('图书评论', **style.init_style)
 chart.add("", book_name, reviews, word_size_range=[30, 100], rotate_step=66)
 page.add(chart)
 
